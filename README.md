@@ -2,7 +2,11 @@
 
 Welcome to my repository 🎉  
 
-MyKatik adalah project aplikasi web sederhana untuk menghitung rumus matematika luas dan keliling bangun datar segitiga dan jajar genjang.  
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/docs/Web/CSS)
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/docs/Web/JavaScript)
+
+**MyKatik🧮** adalah project web sederhana untuk menghitung **luas** dan **keliling** berbagai bangun datar dengan tampilan interaktif dan mudah digunakan.  
 
 ---
 
@@ -12,6 +16,7 @@ MyKatik adalah project aplikasi web sederhana untuk menghitung rumus matematika 
 2. Pilih menu bangun datar yang ingin dihitung.  
 3. Masukkan nilai pada kolom yang tersedia.  
 4. Tekan tombol **Hitung** dan hasil akan langsung muncul.
+5. Tekan tombol **Reset** untuk menghapus hasil dari perhitungan sebelumnya.
 
 ---
 
