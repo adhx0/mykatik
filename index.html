@@ -132,8 +132,17 @@
     </main>
 
     <!-- Footer Content -->
-    <footer>
-        <p>&copy; 2025 Adhingrh01. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; <span id="year"></span> adhx0. All rights reserved.</p>
+</footer>
+
+<script>
+    const startYear = 2024;
+    const currentYear = new Date().getFullYear();
+    document.getElementById("year").textContent =
+        startYear === currentYear ? startYear : `${startYear}–${currentYear}`;
+</script>
+    
 </body>
 </html>
+
