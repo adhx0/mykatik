@@ -9,7 +9,7 @@ Welcome to my repository 🎉
 **🧮 MyKatik** adalah project web sederhana untuk menghitung **luas** dan **keliling** berbagai bangun datar dengan tampilan interaktif dan mudah digunakan.  
 
 ---
-
+###
 ## 🚀 Demo Website  
 👉 [MyKatik - Live Website](https://adhx0.github.io/mykatik/)
 
@@ -20,7 +20,7 @@ Welcome to my repository 🎉
 3. Masukkan nilai pada kolom yang tersedia.  
 4. Tekan tombol **Hitung** dan hasil akan langsung muncul.
 5. Tekan tombol **Reset** untuk menghapus hasil dari perhitungan sebelumnya.
-
+###
 ---
 
 Terima kasih sudah berkunjung ke repository ini 🙏  
