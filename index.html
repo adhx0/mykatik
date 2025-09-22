@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="UTF-8">
@@ -12,32 +12,32 @@
 </head>
 
 <body>
-  <!-- Head Content -->
+  <!-- Header -->
   <header>
     <h1>Welcome to My Katik</h1>
     <p>Website ini dibuat untuk membantu menghitung luas dan keliling bangun datar dengan interaktif.</p>
 
     <!-- Navigation -->
-    <nav>
-      <a href="#segitiga" onclick="showSection('segitiga')">Segitiga</a>
-      <a href="#jajargenjang" onclick="showSection('jajargenjang')">Jajar Genjang</a>
-      <a href="#persegi-panjang" onclick="showSection('persegi-panjang')">Persegi Panjang</a>
-      <a href="#lingkaran" onclick="showSection('lingkaran')">Lingkaran</a>
+    <nav aria-label="Navigasi bangun datar">
+      <a href="#" onclick="showSection('segitiga')">Segitiga</a>
+      <a href="#" onclick="showSection('jajargenjang')">Jajar Genjang</a>
+      <a href="#" onclick="showSection('persegi-panjang')">Persegi Panjang</a>
+      <a href="#" onclick="showSection('lingkaran')">Lingkaran</a>
     </nav>
   </header>
 
-  <!-- Main Content -->
+  <!-- Main -->
   <main>
     <!-- ================= SEGITIGA ================= -->
     <section id="segitiga">
       <header>
         <h2>Segitiga</h2>
       </header>
-      <p>Luas = ½ × alas × tinggi</p>
-      <p>Keliling = sisi A + sisi B + sisi C</p>
+      <p><strong>Luas:</strong> ½ × alas × tinggi</p>
+      <p><strong>Keliling:</strong> sisi A + sisi B + sisi C</p>
 
       <!-- Luas Segitiga -->
-      <form>
+      <form novalidate>
         <header>
           <h3>Luas Segitiga</h3>
         </header>
@@ -49,7 +49,7 @@
           <label for="tinggi">Tinggi:</label>
           <input type="number" id="tinggi" placeholder="Masukkan Tinggi">
         </div>
-        <p id="hasil-luas-sgt"></p>
+        <output id="hasil-luas-sgt" aria-live="polite" role="status"></output>
         <div class="btn-group">
           <button type="button" onclick="hitungLuasSegitiga()">Hitung</button>
           <button type="reset" onclick="resetForm('hasil-luas-sgt')">Reset</button>
@@ -57,7 +57,7 @@
       </form>
 
       <!-- Keliling Segitiga -->
-      <form>
+      <form novalidate>
         <header>
           <h3>Keliling Segitiga</h3>
         </header>
@@ -73,7 +73,7 @@
           <label for="sisi-c">Sisi C:</label>
           <input type="number" id="sisi-c" placeholder="Masukkan Sisi C">
         </div>
-        <p id="hasil-keliling-sgt"></p>
+        <output id="hasil-keliling-sgt" aria-live="polite" role="status"></output>
         <div class="btn-group">
           <button type="button" onclick="hitungKelilingSegitiga()">Hitung</button>
           <button type="reset" onclick="resetForm('hasil-keliling-sgt')">Reset</button>
@@ -86,11 +86,11 @@
       <header>
         <h2>Jajar Genjang</h2>
       </header>
-      <p>Luas = alas × tinggi</p>
-      <p>Keliling = 2 × (alas + sisi miring)</p>
+      <p><strong>Luas:</strong> alas × tinggi</p>
+      <p><strong>Keliling:</strong> 2 × (alas + sisi miring)</p>
 
       <!-- Luas -->
-      <form>
+      <form novalidate>
         <header>
           <h3>Luas Jajar Genjang</h3>
         </header>
@@ -102,7 +102,7 @@
           <label for="tinggi-jg">Tinggi:</label>
           <input type="number" id="tinggi-jg" placeholder="Masukkan Tinggi">
         </div>
-        <p id="hasil-luas-jg"></p>
+        <output id="hasil-luas-jg" aria-live="polite" role="status"></output>
         <div class="btn-group">
           <button type="button" onclick="hitungLuasJG()">Hitung</button>
           <button type="reset" onclick="resetForm('hasil-luas-jg')">Reset</button>
@@ -110,7 +110,7 @@
       </form>
 
       <!-- Keliling -->
-      <form>
+      <form novalidate>
         <header>
           <h3>Keliling Jajar Genjang</h3>
         </header>
@@ -122,7 +122,7 @@
           <label for="sisi-jg">Sisi Miring:</label>
           <input type="number" id="sisi-jg" placeholder="Masukkan Sisi Miring">
         </div>
-        <p id="hasil-keliling-jg"></p>
+        <output id="hasil-keliling-jg" aria-live="polite" role="status"></output>
         <div class="btn-group">
           <button type="button" onclick="hitungKelilingJG()">Hitung</button>
           <button type="reset" onclick="resetForm('hasil-keliling-jg')">Reset</button>
@@ -135,11 +135,11 @@
       <header>
         <h2>Persegi Panjang</h2>
       </header>
-      <p>Luas = Panjang × Lebar</p>
-      <p>Keliling = 2 × (Panjang + Lebar)</p>
+      <p><strong>Luas:</strong> Panjang × Lebar</p>
+      <p><strong>Keliling:</strong> 2 × (Panjang + Lebar)</p>
 
       <!-- Luas -->
-      <form>
+      <form novalidate>
         <header>
           <h3>Luas Persegi Panjang</h3>
         </header>
@@ -151,7 +151,7 @@
           <label for="lebar">Lebar:</label>
           <input type="number" id="lebar" placeholder="Masukkan Lebar">
         </div>
-        <p id="hasil-luas-persegi"></p>
+        <output id="hasil-luas-persegi" aria-live="polite" role="status"></output>
         <div class="btn-group">
           <button type="button" onclick="hitungLuasPersegiPanjang()">Hitung</button>
           <button type="reset" onclick="resetForm('hasil-luas-persegi')">Reset</button>
@@ -159,7 +159,7 @@
       </form>
 
       <!-- Keliling -->
-      <form>
+      <form novalidate>
         <header>
           <h3>Keliling Persegi Panjang</h3>
         </header>
@@ -171,7 +171,7 @@
           <label for="lebar-k">Lebar:</label>
           <input type="number" id="lebar-k" placeholder="Masukkan Lebar">
         </div>
-        <p id="hasil-keliling-persegi"></p>
+        <output id="hasil-keliling-persegi" aria-live="polite" role="status"></output>
         <div class="btn-group">
           <button type="button" onclick="hitungKelilingPersegiPanjang()">Hitung</button>
           <button type="reset" onclick="resetForm('hasil-keliling-persegi')">Reset</button>
@@ -179,17 +179,16 @@
       </form>
     </section>
 
-
     <!-- ================= LINGKARAN ================= -->
     <section id="lingkaran" class="hidden">
       <header>
         <h2>Lingkaran</h2>
       </header>
-      <p>Luas = π × r²</p>
-      <p>Keliling = 2 × π × r</p>
+      <p><strong>Luas:</strong> π × r²</p>
+      <p><strong>Keliling:</strong> 2 × π × r</p>
 
       <!-- Luas -->
-      <form>
+      <form novalidate>
         <header>
           <h3>Luas Lingkaran</h3>
         </header>
@@ -197,7 +196,7 @@
           <label for="jari">Jari-jari:</label>
           <input type="number" id="jari" placeholder="Masukkan Jari-jari">
         </div>
-        <p id="hasil-luas-lingkaran"></p>
+        <output id="hasil-luas-lingkaran" aria-live="polite" role="status"></output>
         <div class="btn-group">
           <button type="button" onclick="hitungLuasLingkaran()">Hitung</button>
           <button type="reset" onclick="resetForm('hasil-luas-lingkaran')">Reset</button>
@@ -205,7 +204,7 @@
       </form>
 
       <!-- Keliling -->
-      <form>
+      <form novalidate>
         <header>
           <h3>Keliling Lingkaran</h3>
         </header>
@@ -213,26 +212,27 @@
           <label for="jari-k">Jari-jari:</label>
           <input type="number" id="jari-k" placeholder="Masukkan Jari-jari">
         </div>
-        <p id="hasil-keliling-lingkaran"></p>
+        <output id="hasil-keliling-lingkaran" aria-live="polite" role="status"></output>
         <div class="btn-group">
           <button type="button" onclick="hitungKelilingLingkaran()">Hitung</button>
           <button type="reset" onclick="resetForm('hasil-keliling-lingkaran')">Reset</button>
         </div>
       </form>
     </section>
+  </main>
 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Adhingrh01. All rights reserved.</p>
+  </footer>
 
-    <!-- Footer Content -->
-    <footer>
-      <p>&copy; <span id="year"></span> Adhingrh01. All rights reserved.</p>
-    </footer>
-
-    <script>
-      const startYear = 2024;
-      const currentYear = new Date().getFullYear();
-      document.getElementById("year").textContent =
-        startYear === currentYear ? startYear : `${startYear}–${currentYear}`;
-    </script>
+  <!-- Script Tahun -->
+  <script>
+    const startYear = 2024;
+    const currentYear = new Date().getFullYear();
+    document.getElementById("year").textContent =
+      startYear === currentYear ? startYear : `${startYear}–${currentYear}`;
+  </script>
 </body>
 
 </html>
